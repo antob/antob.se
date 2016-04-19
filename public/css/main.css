@@ -1,0 +1,164 @@
+/* --------------------------------------------------------------
+
+   main.css
+   * Main CSS file.
+
+-------------------------------------------------------------- */
+
+/* === MAIN SECTION === */
+* { margin: 0; padding: 0; outline: 0; }
+
+header, nav, section, article, aside, footer { display:block }
+
+html, body {
+	width: 100%;
+	height: 100%;
+
+	font: 1em 'Myriad Pro', 'Open Sans', sans-serif;
+	color: white;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+img { display: block }
+
+body {
+	background: #999 no-repeat center top fixed;
+	background-size: cover;
+}
+
+input {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	    -ms-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+::-webkit-input-placeholder { color: #DDD }
+:-moz-placeholder { color: #DDD }
+:-ms-input-placeholder { color: #DDD }
+
+.clear { clear: both }
+
+#pattern {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .1) url(../images/pattern-20130124.png);
+	z-index: -1;
+}
+
+header {
+	position: absolute;
+	top: 15%;
+	left: 12%;
+}
+
+header > h1 {
+	font: 5em 'Lobster', 'Myriad Pro';
+	text-shadow: -1px 0px 10px rgba(0, 0, 0, 0.9);
+}
+
+header > h3 {
+	font-size: 1.4em;
+	font-weight: 200;
+	text-shadow: -1px 0px 4px rgba(0, 0, 0, 0.6);
+}
+
+#bottom {
+	position: absolute;
+	bottom: 12%;
+
+	width: 100%;
+	height: 160px;
+
+	background: #000;
+	background: rgba(0, 0, 0, 0.6);
+}
+/* === // MAIN SECTION === */
+
+
+/* === SOCIAL SECTION === */
+#social {
+  margin: 65px auto 30px;
+  text-align: center;
+  height: 35px;
+	width: 100%;
+	font-size: 1.5em;
+  float: none;
+}
+
+#social > div {
+  display: inline-block;
+}
+
+#social > div > span {
+	margin: 0 20px 0 8px;
+	font-size: 1.15em;
+	font-weight: 200;
+	float: left;
+	display: block;
+}
+
+#social > div > span > a {
+	margin-left: 5px;
+
+	opacity: 0.75;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+
+	-webkit-transition: opacity 0.2s ease;
+	   -moz-transition: opacity 0.2s ease;
+	     -o-transition: opacity 0.2s ease;
+	        transition: opacity 0.2s ease;
+}
+
+#social > div > span > a:hover {
+	opacity: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+#social > div > ul {
+	list-style: none;
+	float: left;
+}
+
+#social > div > ul > li {
+	vertical-align: top;
+	margin-top: 2px;
+	margin-right: 10px;
+	display: inline-block;
+}
+
+#social > div > ul > li > span, #social > div > ul > li > a > span {
+	font-size: 14px;
+	font-weight: 100;
+	vertical-align: middle;
+}
+
+#social > div > ul > li > a {
+	height: 32px;
+	background-repeat: no-repeat;
+
+	opacity: 0.75;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+
+	display: block;
+
+	-webkit-transition: opacity 0.2s ease;
+	   -moz-transition: opacity 0.2s ease;
+	     -o-transition: opacity 0.2s ease;
+	        transition: opacity 0.2s ease;
+}
+
+#social > div > ul > li > a:hover {
+	opacity: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+#social li.no-link a {
+	cursor: default;
+}
+/* === // SOCIAL SECTION === */

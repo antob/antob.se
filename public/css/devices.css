@@ -1,0 +1,66 @@
+body { background-image: url(../images/bg/bg@2880.jpg) }
+
+@media all and (max-width: 1680px), all and (max-device-width: 1680px) {
+
+  body { background-image: url(../images/bg/bg@1680.jpg) }
+}
+
+@media all and (max-width: 1440px), all and (max-device-width: 1440px) {
+
+  body { background-image: url(../images/bg/bg@1440.jpg) }
+}
+
+@media all and (max-width: 1439px), all and (max-device-width: 1439px) {
+
+  body { background-image: url(../images/bg/bg@1024.jpg) }
+}
+
+@media all and (max-width: 768px), all and (max-device-width: 768px) {
+
+  body { background-image: url(../images/bg/bg@768.jpg) }
+}
+
+@media all and (max-width: 730px), all and (max-device-width: 730px) {
+
+  header { top: 5% }
+
+  #bottom {
+    height: 120px;
+  }
+
+  #social {
+    font-size: 1.1em;
+    margin: 0px auto 30px;
+  }
+
+  #social > div > ul {
+    margin: 10px 0;
+    display: block;
+    float: none;
+  }
+
+  #social > div > span {
+    margin: 10px 0;
+    float: none;
+    display: block;
+  }
+
+  #social > div > span:first-child {
+    margin-top: 15px;
+  }
+}
+
+@media all and (max-width: 450px), all and (max-device-width: 450px) {
+  header {
+    width: 100%;
+    left: 0px;
+    text-align: center;
+  }
+}
+
+@media all and (max-height: 320px) {
+  #bottom {
+    bottom: 2%;
+    height: 90px;
+  }
+}
