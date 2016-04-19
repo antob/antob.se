@@ -1,10 +1,12 @@
-0.0.0.0
-root /srv/public
+antob.se, www.antob.se {
+  tls admin@antob.se
+  root /srv/public
 
-git {
-  repo git@github.com:antob/antob.se.git
-  path  ../
+  git {
+    repo git@github.com:antob/antob.se.git
+    path  ../
+  }
+
+  log stdout
+  errors stdout
 }
-
-log stdout
-errors stdout
