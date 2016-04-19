@@ -1,0 +1,10 @@
+0.0.0.0
+root /srv/public
+
+git {
+  repo git@github.com:antob/antob.se.git
+  path  ../
+}
+
+log stdout
+errors stdout
