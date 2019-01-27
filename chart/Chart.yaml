@@ -1,0 +1,9 @@
+description: Antob web site
+engine: gotpl
+home: https://www.antob.se/
+maintainers:
+- name: antob
+name: antob-web
+sources:
+- https://github.com/antob/antob.se
+version: 0.1.0

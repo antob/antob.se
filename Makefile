@@ -1,4 +1,4 @@
-TAG = 1.5.1
+TAG = 1.6.0
 PREFIX = antob/web
 
 all: build push

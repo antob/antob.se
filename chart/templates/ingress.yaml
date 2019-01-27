@@ -1,0 +1,23 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: {{ template "fullname" . }}
+  namespace: "{{ .Release.Namespace }}"
+  labels:
+    app: {{ template "fullname" . }}
+    chart: "{{ .Chart.Name }}-{{ .Chart.Version }}"
+    release: "{{ .Release.Name }}"
+    heritage: "{{ .Release.Service }}"
+  annotations:
+    kubernetes.io/ingress.class: traefik
+spec:
+  rules:
+  {{- $fullname := (include "fullname" .) -}}
+  {{- range .Values.hostNames }}
+  - host: {{ . }}
+    http:
+      paths:
+      - backend:
+          serviceName: {{ $fullname }}
+          servicePort: http
+  {{- end }}
